@@ -28,6 +28,7 @@ public:
     bool isDayEqualsToMonth() const {
         return day == month;
     }
+
     void increaseMonth() {
         month++;
         if (month > 12) {
