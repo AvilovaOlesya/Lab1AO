@@ -24,12 +24,15 @@ public:
     Date() : day(1), month(1), year(2000) {
         cout << "Конструктор по умолчанию вызван: " << toString() << endl;
     }
+
     Date(int d, int m, int y) : day(d), month(m), year(y) {
         cout << "Конструктор с параметрами вызван: " << toString() << endl;
     }
+
     ~Date() {
         cout << "Деструктор вызван для уничтожения объекта : " << endl;
     }
+
     bool isDayEqualsToMonth() const {
         return day == month;
     }
